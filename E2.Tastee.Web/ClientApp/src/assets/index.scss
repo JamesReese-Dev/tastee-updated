@@ -1,0 +1,742 @@
+@import "_variables.scss";
+@import "_darkTheme.scss";
+@import "_lightTheme.scss";
+@import "_adminPanels.scss";
+
+html,
+body,
+#root,
+.full-height {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background-color: $white;
+}
+
+.siteContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-right: 0;
+}
+
+.contentWithHeaderPublic {
+  flex: 1;
+  padding: 5px !important;
+  padding-top: 0px !important;
+  padding-bottom: 50px !important;
+}
+
+.contentWithHeader {
+  flex: 1;
+  padding: 5px !important;
+  padding-top: 0px !important;
+  padding-left: 65px !important;
+  padding-bottom: 50px !important;
+}
+
+.footerAuth {
+  min-height: 45px;
+  flex: none;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding-left: 65px !important;
+}
+
+.headerDesktop {
+  min-height: 65px !important;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding-left: 65px !important;
+}
+
+.stickyLeftMenu {
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+
+.stickyDupButton {
+  z-index: 100;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.stickyLeftMenuCollapsed {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftMenuButtons {
+  height: 48px !important;
+  width: 48px !important;
+  padding-left: 9px !important;
+}
+.notificationBellButton {
+  height: 36px !important;
+  width: 36px !important;
+}
+.messageCenterPopout {
+  border: 0;
+  max-width: 750px;
+  max-height: 75vh;
+}
+.barsButton {
+  height: 38px !important;
+  width: 38px !important;
+  padding-left: 12px !important;
+}
+
+.topLeftMenuSection {
+  flex: 1;
+}
+
+.bottomLeftMenuSection {
+  flex: none;
+}
+
+.desktopContainer {
+  min-height: 93vh;
+  padding-left: 65px;
+  &Public {
+    padding-left: 0px;
+  }
+}
+
+.mobilePreviewContainer {
+  max-height: 70vh;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bgRed {
+  background-color: red;
+}
+.fullHeight {
+  min-height: 90vh;
+}
+
+.filter,
+.sort-handle {
+  cursor: pointer;
+}
+
+.filterableScreen {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 100%;
+}
+
+.filterPagerHeader {
+  /* min-height: 65px; */
+  flex: none;
+  padding: 0;
+}
+.filter-definition-caption {
+  padding-top: 8px;
+  display: inline-block;
+}
+
+.contentWithFilters {
+  flex: 1;
+  padding: 0;
+}
+
+.pagerFooter {
+  min-height: 65px;
+  flex: none;
+}
+
+.minWidth85 {
+  min-width: 85px !important;
+}
+
+.minWidth105 {
+  min-width: 105px !important;
+}
+.maxWidth105 {
+  max-width: 105px !important;
+}
+
+.minWidth150 {
+  min-width: 150px !important;
+}
+
+.mapSection {
+  height: 32vh;
+}
+
+.mapView {
+  height: 30vh;
+}
+
+#root
+  > div
+  > div.contentWithHeader
+  > div
+  > div
+  > div
+  > div.m-0.p-0.fullHeight.row
+  > div
+  > div
+  > div.contentWithFilters
+  > div.mapSection
+  > div {
+  // overflow: visible !important;
+  overflow-x: hidden !important;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+  overflow-y: hidden;
+}
+
+th {
+  border-top: none !important;
+}
+
+.inputGroupPrependAddon {
+  min-width: 142px !important;
+}
+
+.routeDetailsCol {
+  min-width: 400px !important;
+}
+
+.minWidth750 {
+  min-width: 750px !important;
+}
+
+.minWidth800 {
+  min-width: 800px !important;
+}
+
+.minHeight700 {
+  min-height: 700px !important;
+}
+
+.minHeight150 {
+  min-height: 150px !important;
+}
+
+.minHeight225 {
+  min-height: 225px !important;
+}
+
+.minHeight38 {
+  min-height: 38px !important;
+}
+
+.react-time-picker__wrapper {
+  border-radius: 0.25rem !important;
+  border: 1px solid #ced4da;
+}
+.fontSize85 {
+  font-size: 0.85em !important;
+}
+
+.width50Percent {
+  width: 50% !important;
+}
+.cursorPointer {
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  -ms-transform: scale(1.75); /* IE */
+  -moz-transform: scale(1.75); /* FF */
+  -webkit-transform: scale(1.75); /* Safari and Chrome */
+  -o-transform: scale(1.75); /* Opera */
+  transform: scale(1.75);
+  // padding: 10px;
+  // margin-left: 0.45em;
+  border: 1px solid #d3d3d3;
+}
+
+.showDanger {
+  background-color: $dangerColor !important;
+  color: white !important;
+}
+
+.showWarning {
+  background-color: $warningColor !important;
+}
+
+.lightGreyBackground {
+  background-color: #d8d8d8 !important;
+}
+
+.whiteBackground {
+  background-color: #fff !important;
+}
+
+.height38 {
+  min-height: 38px !important;
+}
+
+.statCard {
+  padding-top: 16px !important;
+  padding-top: 12px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  > div.row {
+    > .card-title {
+      font-size: 1.65em;
+      color: $primaryColor;
+    }
+    > .card-stat {
+      font-size: 1.45em;
+      color: $infoColor;
+    }
+  }
+}
+
+.link-panel {
+  border: solid 2px $infoColor;
+  background-color: white;
+  color: black !important;
+  font-size: 1.5em !important;
+  &:hover {
+    background-color: $offWhite !important;
+  }
+}
+
+.clickable-icon {
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.no-decoration {
+  text-decoration: none !important;
+}
+
+.sidebarLogo {
+  max-width: 125px !important;
+}
+
+.signOutButton {
+  padding-left: 0px !important;
+  padding-right: 7px !important;
+  display: block;
+}
+
+.publicPagePadRight {
+  padding-right: 65px !important;
+}
+
+.flipHorizontal {
+  transform: scale(-1, 1);
+}
+
+.signInImage {
+  max-width: 400px !important;
+}
+.nav-link {
+  cursor: pointer;
+}
+.subscription {
+  cursor: pointer;
+}
+.selectedSubscription {
+  border-color: $dangerColor !important;
+}
+
+.danger {
+  background-color: $dangerColor !important;
+  color: white !important;
+}
+
+.primary {
+  background-color: $primaryColor !important;
+  color: white !important;
+}
+
+.info {
+  background-color: $infoColor !important;
+  color: white !important;
+}
+
+.warning {
+  background-color: $warningColor !important;
+  color: white !important;
+}
+
+.dark {
+  background-color: $darkColor !important;
+  color: white !important;
+}
+
+.text-warning {
+  color: $warningColor !important;
+}
+
+text-royal {
+  color: $royalBlue !important;
+}
+.pricing-card {
+  text-align: center;
+}
+.price {
+  font-size: 24px;
+}
+.bold {
+  font-weight: bolder;
+}
+#userCircle {
+  color: $royalBlue !important;
+  width: 200px;
+  height: 200px;
+  text-shadow: 1px 1px 1px;
+  border-color: $royalBlue !important;
+}
+.center-text {
+  text-align: center;
+}
+img.user-profile-pic {
+  width: 100px;
+}
+.dim-text {
+  font-size: smaller;
+  color: gray;
+}
+.tagline {
+  text-align: center;
+  color: $primaryColor !important;
+  font-weight: bold;
+  font-size: 24px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content:hover,
+.dropdown-content:focus {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content {
+  position: relative; // absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  display: block;
+  padding: 12px 16px;
+  cursor: pointer;
+  color: $royalBlue !important;
+}
+.title {
+  font-size: 1.4em;
+  color: $primaryColor;
+}
+.information {
+  font-size: 14px;
+  font-style: italic;
+  color: #737373;
+}
+.deactivate {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.xs {
+  padding: 2px 6px !important;
+  font-size: 0.8rem !important;
+}
+
+input.dtp {
+  width: 115px;
+  margin-right: 6px;
+}
+
+input.time-input {
+  font-size: 0.8rem;
+  width: 92%;
+  padding: 4px 2px;
+  float: left;
+  margin-top: 8px;
+}
+.dayOfMonth {
+  width: 60px;
+}
+
+.subtext {
+  font-style: italic;
+  font-weight: bold;
+}
+label {
+  margin-bottom: 0;
+}
+
+/*custom radio buttons*/
+
+/* The container */
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* larger custom radio buttons */
+.radio-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #d3d3d3;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .radio-checkmark {
+  // background-color: rgb(0, 92, 200);
+  background-color: rgb(25, 118, 255);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .radio-checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .radio-checkmark:after {
+  top: 0.45rem;
+  left: 0.45rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: white;
+}
+
+// surveys
+.scroll-container {
+  margin-top: 1rem;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-top: 3rem;
+  padding-bottom: 9rem;
+  position: fixed;
+  right: 0;
+  width: 100% !important;
+}
+
+.edit-scroll-container {
+  height: 65vh;
+  overflow-y: scroll;
+  position: relative;
+  right: 0;
+  width: 100% !important;
+}
+
+.preview-scroll-container {
+  height: 57vh;
+  overflow-y: scroll;
+  position: relative;
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  .scroll-container, .submit-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.edit-scroll-container, .scroll-container, .preview-scroll-container, .productsRow {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar everywhere else */
+.preview-scroll-container::-webkit-scrollbar,
+.edit-scroll-container::-webkit-scrollbar,
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.question-section-wrapper {
+  margin-bottom: 1rem;
+}
+
+.survey-check-label {
+  margin-left: 0.5rem;
+}
+
+.survey-check-label input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+div.invalid-feedback {
+  display: block;
+}
+
+img.emoji-image{
+  height: 100px;
+  width: 100px;
+}
+
+.ql-image-sm {
+  max-height: 55px !important;
+  min-height: 35px !important;
+}
+
+.ql-image-md {
+  max-height: 150px !important;
+  min-height: 75px !important;
+}
+
+.ql-image-lg {
+  max-height: 300px !important;
+  min-height: 150px !important;
+}
+
+
+img#Logo {
+  width: calc(60vw - 35px) !important;
+}
+
+.curvedBackground {
+  width: 105%;
+  left: -3%;
+  flex: none;
+  position: fixed;
+  top: bottom;
+  background-color: $softGray;
+  border-top-left-radius: 30% 22%;
+  border-top-right-radius: 40% 18%;
+}
+
+div.mobilePreviewContainer.container-fluid > div > div > div.curvedHeader {
+  width: 108%;
+  height: 10%;
+  left: -4%;
+  flex: none;
+  z-index: 2;
+  position: relative;
+  top: 0;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.darkPurpleFooter {
+  min-height: 45px;
+  flex: none;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding-left: 65px !important;
+}
+
+span.radio-checkmark {
+  border-radius: 25% !important;
+  border: 2px solid #777777 !important;
+}
+
+.radio-container .radio-checkmark:after {
+  top: 0.4rem;
+  left: 0.37rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: white;
+}
+
+.radio-container input:checked ~ .radio-checkmark {
+  background-color: green;
+}
+
+.custom-control-label {
+  padding-top: .25rem;
+  padding-left: .5rem;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: green;
+  background-color: green;
+}
+.custom-checkbox .custom-control-label::before {
+  border-radius: 25% !important;
+}
+.custom-control-label::before, .custom-file-label, .custom-select {
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.custom-control-label::before {
+  position: absolute;
+  top: 0.25rem;
+  left: -1.5rem;
+  display: block;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  content: "";
+  background-color: #fff;
+  border: 2px solid #777777 !important;
+}
+
+.custom-control-label::after {
+  position: absolute;
+  top: 0.25rem;
+  left: -24px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background: 50% / 50% 50% no-repeat;
+}
+
+.react-datepicker__month-container, .react-datepicker__month, .react-datepicker, .react-datepicker-popper {
+  z-index: 5000 !important;
+}
+
+.paddingTopForHeader {
+  padding-top: 10vh !important;
+}
+
+.roundedLeftGroupButton {
+  border-top-left-radius: 0.2rem !important;
+  border-bottom-left-radius: 0.2rem !important;
+}

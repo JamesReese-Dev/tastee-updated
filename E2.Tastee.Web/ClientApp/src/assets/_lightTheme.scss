@@ -1,0 +1,466 @@
+.lightTheme.fullHeight {
+  height: 100% !important;
+}
+
+a.themeBackground.nav-link {
+  background-color: $offWhite !important;
+  color: black;
+}
+a.themeBackground.nav-link.active {
+  color: $primaryColor !important;
+  text-decoration: underline;
+}
+
+.lightTheme {
+  background-color: $offWhite;
+
+  .header, .footer {
+    background-color: $mediumGray;
+  }
+
+  .primaryText {
+    color: $primaryColor !important;
+  }
+
+  .primaryDarkText {
+    color: $projectPrimaryBlueDark !important;
+  }
+
+  .secondaryText {
+    color: $secondaryColor !important;
+  }
+
+  .successText {
+    color: $successColor !important;
+  }
+
+  .infoText {
+    color: $infoColor !important;
+  }
+
+  .warningText {
+    color: $warningColor !important;
+  }
+
+  .dangerText {
+    color: $successColor !important;
+  }
+
+  .menuButtonColor {
+    color: $royalBlue !important;
+  }
+
+  .projectPrimary, .projectPrimary.btn.btn-secondary {
+    background-color: $primaryColor !important;
+    border-color: $primaryColor !important;
+    color: white !important;
+    &.btn:hover {
+      background-color: $projectPrimaryBlueDark !important;
+      color: white !important;
+      &.disabled {
+        background-color: $primaryColor !important;
+        border-color: $primaryColor !important;
+        color: white !important;
+      }
+    }
+    &.btn-outline-secondary {
+      background-color: #ffffff !important;
+      border-color: $primaryColor !important;
+      color: $primaryColor !important;
+      &.btn:hover {
+        background-color: $primaryColor !important;
+        border-color: $primaryColor !important;
+        color: white !important;
+        &.disabled {
+          background-color: #ffffff !important;
+          border-color: $primaryColor !important;
+          color: $primaryColor !important;
+        }
+      }
+      &.active {
+        background-color: $primaryColor !important;
+        border-color: $primaryColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $primaryColor !important;
+          color: white !important;
+        }
+      }
+    }
+    &.card-outline {
+      background-color: transparent !important;
+      border-color: $primaryColor !important;
+      color: $primaryColor !important;
+    }
+    &.list-group-item {
+      background-color: #ffffff !important;
+      border-color: $primaryColor !important;
+      color: $primaryColor !important;
+      &.active {
+        background-color: $primaryColor !important;
+        border-color: $primaryColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $primaryColor !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+
+  .projectDanger {
+    background-color: $dangerColor !important;
+    border-color: $dangerColor !important;
+    color: white !important;
+    &.btn:hover {
+      background-color: $projectDangerRedDark !important;
+      color: white !important;
+      &.disabled {
+        background-color: $dangerColor !important;
+        border-color: $dangerColor !important;
+        color: white !important;
+      }
+    }
+    &.btn-outline-secondary {
+      background-color: #ffffff !important;
+      border-color: $dangerColor !important;
+      color: $dangerColor !important;
+      &.btn:hover {
+        background-color: $dangerColor !important;
+        border-color: $dangerColor !important;
+        color: white !important;
+        &.disabled {
+          background-color: #ffffff !important;
+          border-color: $dangerColor !important;
+          color: $dangerColor !important;
+        }
+      }
+      &.active {
+        background-color: $dangerColor !important;
+        border-color: $dangerColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $dangerColor !important;
+          color: white !important;
+        }
+      }
+    }
+    &.card-outline {
+      background-color: transparent !important;
+      border-color: $dangerColor !important;
+      color: $dangerColor !important;
+    }
+    &.list-group-item {
+      background-color: #ffffff !important;
+      border-color: $dangerColor !important;
+      color: $dangerColor !important;
+      &.active {
+        background-color: $dangerColor !important;
+        border-color: $dangerColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $dangerColor !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+
+  .textProjectDanger {
+    color: $dangerColor !important;
+  }
+
+  .projectInfo {
+    background-color: $infoColor !important;
+    border-color: $infoColor !important;
+    color: white !important;
+    &.btn:hover {
+      background-color: $projectInfoTealDark !important;
+      color: white !important;
+      &.disabled {
+        background-color: $infoColor !important;
+        border-color: $infoColor !important;
+        color: white !important;
+      }
+    }
+    &.btn-outline-secondary {
+      background-color: #ffffff !important;
+      border-color: $infoColor !important;
+      color: $infoColor !important;
+      &.btn:hover {
+        background-color: $infoColor !important;
+        border-color: $infoColor !important;
+        color: white !important;
+        &.disabled {
+          background-color: #ffffff !important;
+          border-color: $infoColor !important;
+          color: $infoColor !important;
+        }
+      }
+      &.active {
+        background-color: $infoColor !important;
+        border-color: $infoColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $infoColor !important;
+          color: white !important;
+        }
+      }
+    }
+    &.card-outline {
+      background-color: transparent !important;
+      border-color: $infoColor !important;
+      color: $infoColor !important;
+    }
+    &.list-group-item {
+      background-color: #ffffff !important;
+      border-color: $infoColor !important;
+      color: $infoColor !important;
+      &.active {
+        background-color: $infoColor !important;
+        border-color: $infoColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $infoColor !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+
+  .projectSuccess {
+    background-color: $successColor !important;
+    border-color: $successColor !important;
+    color: white !important;
+    &.btn:hover {
+      background-color: $projectSuccessGreenDark !important;
+      color: white !important;
+      &.disabled {
+        background-color: $successColor !important;
+        border-color: $successColor !important;
+        color: white !important;
+      }
+    }
+    &.btn-outline-secondary {
+      background-color: #ffffff !important;
+      border-color: $successColor !important;
+      color: $successColor !important;
+      &.btn:hover {
+        background-color: $successColor !important;
+        border-color: $successColor !important;
+        color: white !important;
+        &.disabled {
+          background-color: #ffffff !important;
+          border-color: $successColor !important;
+          color: $successColor !important;
+        }
+      }
+      &.active {
+        background-color: $successColor !important;
+        border-color: $successColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $successColor !important;
+          color: white !important;
+        }
+      }
+    }
+    &.card-outline {
+      background-color: transparent !important;
+      border-color: $successColor !important;
+      color: $successColor !important;
+    }
+    &.list-group-item {
+      background-color: #ffffff !important;
+      border-color: $successColor !important;
+      color: $successColor !important;
+      &.active {
+        background-color: $successColor !important;
+        border-color: $successColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $successColor !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+
+  .projectSecondary {
+    background-color: $secondaryColor !important;
+    border-color: $secondaryColor !important;
+    color: white !important;
+    &.btn:hover {
+      background-color: $projectSecondaryGrayDark !important;
+      border-color: $projectSecondaryGrayDark !important;
+      color: white !important;
+      &.disabled {
+        background-color: $secondaryColor !important;
+        border-color: $secondaryColor !important;
+        color: white !important;
+      }
+    }
+    &.btn-outline-secondary {
+      background-color: #ffffff !important;
+      border-color: $secondaryColor !important;
+      color: $secondaryColor !important;
+      &.btn:hover {
+        background-color: $secondaryColor !important;
+        border-color: $secondaryColor !important;
+        color: white !important;
+        &.disabled {
+          background-color: #ffffff !important;
+          border-color: $secondaryColor !important;
+          color: $secondaryColor !important;
+        }
+      }
+      &.active {
+        background-color: $secondaryColor !important;
+        border-color: $secondaryColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $secondaryColor !important;
+          color: white !important;
+        }
+      }
+    }
+    &.card-outline {
+      background-color: transparent !important;
+      border-color: $secondaryColor !important;
+      color: $secondaryColor !important;
+    }
+    &.list-group-item {
+      background-color: #ffffff !important;
+      border-color: $secondaryColor !important;
+      color: $secondaryColor !important;
+      &.active {
+        background-color: $secondaryColor !important;
+        border-color: $secondaryColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $secondaryColor !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+
+  .projectWarning {
+    background-color: $warningColor !important;
+    border-color: $warningColor !important;
+    color: white !important;
+    &.btn:hover {
+      background-color: $projectWarningYellowDark !important;
+      border-color: $projectWarningYellowDark !important;
+      color: white !important;
+      &.disabled {
+        background-color: $warningColor !important;
+        border-color: $warningColor !important;
+        color: white !important;
+      }
+    }
+    &.btn-outline-secondary {
+      background-color: #ffffff !important;
+      border-color: $warningColor !important;
+      color: $warningColor !important;
+      &.btn:hover {
+        background-color: $warningColor !important;
+        border-color: $warningColor !important;
+        color: white !important;
+        &.disabled {
+          background-color: #ffffff !important;
+          border-color: $warningColor !important;
+          color: $warningColor !important;
+        }
+      }
+      &.active {
+        background-color: $warningColor !important;
+        border-color: $warningColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $warningColor !important;
+          color: white !important;
+        }
+      }
+    }
+    &.card-outline {
+      background-color: transparent !important;
+      border-color: $warningColor !important;
+      color: $warningColor !important;
+    }
+    &.list-group-item {
+      background-color: #ffffff !important;
+      border-color: $warningColor !important;
+      color: $warningColor !important;
+      &.active {
+        background-color: $warningColor !important;
+        border-color: $warningColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $warningColor !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+
+  .projectDark {
+    background-color: $darkColor !important;
+    border-color: $darkColor !important;
+    color: white !important;
+    &.btn:hover {
+      background-color: $darkColor !important;
+      border-color: $darkColor !important;
+      color: white !important;
+      &.disabled {
+        background-color: $darkColor !important;
+        border-color: $darkColor !important;
+        color: white !important;
+      }
+    }
+    &.btn-outline-secondary {
+      background-color: #ffffff !important;
+      border-color: $darkColor !important;
+      color: $darkColor !important;
+      &.btn:hover {
+        background-color: $darkColor !important;
+        border-color: $darkColor !important;
+        color: white !important;
+        &.disabled {
+          background-color: #ffffff !important;
+          border-color: $darkColor !important;
+          color: $darkColor !important;
+        }
+      }
+      &.active {
+        background-color: $darkColor !important;
+        border-color: $darkColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $darkColor !important;
+          color: white !important;
+        }
+      }
+    }
+    &.card-outline {
+      background-color: transparent !important;
+      border-color: $darkColor !important;
+      color: $darkColor !important;
+    }
+    &.list-group-item {
+      background-color: #ffffff !important;
+      border-color: $darkColor !important;
+      color: $darkColor !important;
+      &.active {
+        background-color: $darkColor !important;
+        border-color: $darkColor !important;
+        color: white !important;
+        &.btn:hover {
+          background-color: $darkColor !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+// add new items above this line
+}

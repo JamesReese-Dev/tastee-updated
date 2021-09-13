@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="FluentNHibernate" Version="3.1.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\E2.Tastee.Common\E2.Tastee.Common.csproj" />
+    <ProjectReference Include="..\E2.Tastee.Contracts.Persistence\E2.Tastee.Contracts.Persistence.csproj" />
+    <ProjectReference Include="..\E2.Tastee.Models\E2.Tastee.Models.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\E2.Tastee.Common\E2.Tastee.Common.csproj" />
+    <ProjectReference Include="..\E2.Tastee.Contracts.Services\E2.Tastee.Contracts.Services.csproj" />
+    <ProjectReference Include="..\E2.Tastee.Models\E2.Tastee.Models.csproj" />
+  </ItemGroup>
+
+</Project>

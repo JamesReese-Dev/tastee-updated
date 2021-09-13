@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\E2.Tastee.Common\E2.Tastee.Common.csproj" />
+    <ProjectReference Include="..\E2.Tastee.Contracts.Services\E2.Tastee.Contracts.Services.csproj" />
+    <ProjectReference Include="..\E2.Tastee.Persistence.NHibernate\E2.Tastee.Persistence.NHibernate.csproj" />
+    <ProjectReference Include="..\E2.Tastee.Services\E2.Tastee.Services.csproj" />
+  </ItemGroup>
+
+</Project>

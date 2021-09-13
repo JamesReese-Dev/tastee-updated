@@ -1,0 +1,87 @@
+// custom small size for dashboardPanel.scss
+$screen-dash-sm-min: 600px;
+
+// Tablets and small desktops
+$screen-md-min: 888px;
+
+// custom medium size for dashboardPanel.scss
+$screen-dash-md-min: 980px;
+
+// Large tablets and desktops
+$screen-lg-min: 1080px;
+
+// XLarge desktops
+$screen-xl-min: 1296px;
+
+// Widescreen desktops
+$screen-wd-min: 1500px;
+
+@mixin xs {
+  @media (min-width: #{$screen-dash-sm-min}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin md-dash {
+  @media (min-width: #{$screen-dash-md-min}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+@mixin wd {
+  @media (min-width: #{$screen-wd-min}) {
+    @content;
+  }
+}
+
+$textColor: #550202;
+$darkColor: #550202;
+$veryDarkColor: #333333;
+$black: #262730;
+$white: #FFFFFF;
+
+$primaryColor: #2798cc;
+$secondaryColor: #a9adad;
+$successColor: #03a138;
+$dangerColor: #c1292e;
+$infoColor: #00a8be;
+$royalBlue: #180375;
+$offWhite: #f0f0f0;
+$lightGray: #c8d3d5;
+$softGray: #ececec;
+$darkGray: #808080;
+$mediumGray: #A7B0B7;
+$warningColor: #ecd44c;
+
+
+$projectPrimaryBlue: $primaryColor;
+$projectPrimaryBlueDark: #1478a7;
+$projectSecondaryGray: $secondaryColor;
+$projectSecondaryGrayDark: #808080;
+$projectSuccessGreen: $successColor;
+$projectSuccessGreenDark: #0a7a2f;
+$projectInfoTeal: $infoColor;
+$projectInfoTealDark: #088494;
+$projectWarningYellow: $warningColor;
+$projectWarningYellowDark: #fdca40;
+$projectDangerRed: $dangerColor;
+$projectDangerRedDark: #a82428;
+
+
+$projectBrightBlue: #63d2ff;
+$projectBrightBlueDark: #41a7cf;
+$projectOrange: #F19143;
+$projectOrangeDark: #cf650e;

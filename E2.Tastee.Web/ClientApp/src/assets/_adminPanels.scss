@@ -1,0 +1,139 @@
+.shave-top-right {
+  border-top-right-radius: 10px !important;
+}
+
+div.admin-panel {
+  font-family: Verdana;
+  border-radius: 10px;
+  cursor: pointer;
+  border: solid 1px #000000;
+  text-align: center;
+  background-color: #d9e6f2;
+  min-height: 200px;
+  min-width: 160px;
+  cursor: pointer;
+}
+
+div.admin-panel.deactivated {
+    background-color: RGB(222, 242, 255, .3);
+    border: solid 1px #999999;
+    color: #333333;
+}
+
+li.deactivated {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .linkIcon {
+    margin-top: 40px;
+  }
+
+  div.admin-panel > div.col {
+    padding-top: 30px;
+  }
+}
+
+div.admin-panel > div.center-vertically {
+  margin: auto;
+}
+
+/*
+div.admin-panel:hover {
+  background-color: $primaryLighterColor;
+  border: solid 1px $primaryDarkerColor;
+}
+
+div.admin-panel:hover .title,
+div.admin-panel:hover .count,
+div.admin-panel:hover .icon-col {
+  color: #ffffff;
+}
+*/
+div.admin-panel div.icon-col {
+  color: #0c7e76;
+}
+
+div.admin-panel .title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #000;
+}
+
+div.admin-panel .caption {
+  text-align: left;
+  font-size: 0.8em;
+  color: #333;
+}
+
+div.admin-panel.deactivated .title {
+  color: #999;
+}
+
+@media only screen and (max-width: 1080px) {
+  div.admin-panel .title {
+    font-size: 1.25em !important;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  div.admin-panel .title {
+    font-size: 1.15em !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  div.admin-panel .title {
+    font-size: 1em !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  div.admin-panel .linkIcon {
+    font-size: 2.5em !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  div.admin-panel .title {
+    font-size: 0.8em !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  div.admin-panel .linkIcon {
+    font-size: 1.75em !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.admin-panel .title {
+    font-size: 0.75em !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.admin-panel .linkcon {
+    font-size: 1.65em !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  div.admin-panel .title {
+    font-size: 1.15em !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  div.admin-panel .linkIcon {
+    font-size: 2.5em !important;
+  }
+}
+
+div.admin-panel .count {
+  font-weight: bold;
+  font-size: 36pt;
+  color: #000;
+  clear: both;
+}
